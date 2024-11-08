@@ -1,11 +1,9 @@
 ## To modify by developer(s) of the plugin
 
 [plugin-info]
-SHORT_PLUGIN_NAME = 'template'  #to be modified, for instance daqmx then rename the module name:
-# (pymodaq_plugins_template become pymodaq_plugins_daqmx for instance)
-
-package-url = 'https://github.com/PyMoDAQ/pymodaq_plugins_template' #to modify
-description = 'some word about your plugin'
+SHORT_PLUGIN_NAME = 'rigol'  #to be modified, for instance daqmx then rename
+package-url = 'https://github.com/nano713/pymodaq_plugins_rigol' #to modify
+description = 'Set of PyMoDAQ plugins for instruments from RIGOL including DSA815 spectrum analyzer.'
 
 author = 'Author Name'
 author-email = 'Author email'
@@ -13,7 +11,7 @@ license = 'MIT'
 
 [plugin-install]
 #packages required for your plugin:
-packages-required = ['pymodaq>=4.3.6']
+packages-required = ['pymodaq>=4.3.6', 'pyvisa']
 
 [features]  # defines the plugin features contained into this plugin
 instruments = true  # true if plugin contains instrument classes (else false, notice the lowercase for toml files)
